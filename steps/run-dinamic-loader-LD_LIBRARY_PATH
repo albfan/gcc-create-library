@@ -1,0 +1,1 @@
+LD_LIBRARY_PATH=$(pwd)/bin/shared bin/dynamic-library-loader

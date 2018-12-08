@@ -1,10 +1,4 @@
 #
 # Using dl functions
 #
-gcc src/dynamic-library-loader.c -ldl -o bin/dynamic-library-loader
-
-#
-#  As long as /usr/lib/libtq84.so exists, LD_LIBRARY_PATH
-#  needs not be set
-#
-bin/dynamic-library-loader
+gcc src/dlmain.c -ldl -o bin/dynamic-library-loader

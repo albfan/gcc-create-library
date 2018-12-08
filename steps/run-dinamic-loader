@@ -1,0 +1,5 @@
+#
+#  As long as /usr/lib/libruntime.so exists, LD_LIBRARY_PATH
+#  does not need to be set
+#
+bin/dynamic-library-loader

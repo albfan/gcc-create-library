@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include <dlfcn.h>
 
-// Note, tq84.h needs not be included.
-// #include "tq84.h"
-
+// Note, no headers are included
 
 void* getFunctionPointer(void* lib, const char* funcName) {
  //
@@ -28,12 +26,12 @@ int main(int argc, char* argv[]) {
 
  //
  // Open the dynamic library
-    void* tq84_lib = dlopen("libtq84.so",  RTLD_LAZY | RTLD_GLOBAL);
+    void* runtime_lib = dlopen("libruntime.so",  RTLD_LAZY | RTLD_GLOBAL);
 
-    if (!tq84_lib) {
+    if (!runtime_lib) {
      //
      // Apparently, the library could not be opened
-        fprintf(stderr, "Could not open libtq84.so\n");
+        fprintf(stderr, "Could not open libruntime.so\n");
         exit(1);
     }
 
@@ -44,18 +42,19 @@ int main(int argc, char* argv[]) {
  //     Function doesNotExist does not exist, demonstrate
  //     calling dlerror()
  //
-    fptr_null      =getFunctionPointer(tq84_lib, "doesNotExist");
-    fptr_setSummand=getFunctionPointer(tq84_lib, "setSummand");
-    fptr_add       =getFunctionPointer(tq84_lib, "add"       );
+    fptr_null       = getFunctionPointer(runtime_lib, "doesNotExist");
+    fptr_setSummand = getFunctionPointer(runtime_lib, "setSummand"  );
+    fptr_add        = getFunctionPointer(runtime_lib, "add"         );
 
- 
+
  //
  // Call the function via the function pointer
  //
     fptr_setSummand(42);
-    
+
     int result = fptr_add(7);
 
     printf("Result: %d\n", result);
 
 }
+

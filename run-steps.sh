@@ -18,6 +18,10 @@
 
 . steps/create-dynamic-library-loader
 
+. steps/run-dynamic-loader-LD_LIBRARY_PATH
+
+. steps/run-dynamic-loader
+
 . steps/create-soname-library
 
 . steps/link-soname-library
