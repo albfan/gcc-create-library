@@ -1,4 +1,4 @@
-sudo rm /usr/lib/libtq84*
+sudo rm /usr/lib/libruntime*
 rm   bin/*.o
 rm   bin/static/*.o
 rm   bin/shared/*.o

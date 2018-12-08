@@ -4,6 +4,6 @@
 #  List symbols in object files
 #
 nm bin/static/add.o
-nm bin/shared/libtq84Soname.so
+nm bin/shared/libruntimeSoname.so
 nm bin/statically-linked
 nm bin/dynamic-library-loader
