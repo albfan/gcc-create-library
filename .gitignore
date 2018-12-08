@@ -3,3 +3,4 @@ use-shared-object
 statically-linked*
 dlopen
 bin
+build/
