@@ -6,3 +6,4 @@ int answer() {
   return add(22);  // Will return 42 (=20+22)
 
 }
+

@@ -24,3 +24,4 @@ void __attribute__ ((destructor)) cleanUpLibrary(void) {
  //
     printf("Library is exited\n"); 
 }
+

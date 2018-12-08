@@ -1,3 +1,3 @@
 #
 #
-gcc   bin/main.o  -Lbin/static -ltq84 -o bin/statically-linked
+gcc   bin/main.o  -Lbin/static -lruntime -o bin/statically-linked

@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "tq84/add.h"
-#include "tq84/answer.h"
+#include "lib/add.h"
+#include "lib/answer.h"
 
 int main(int argc, char* argv[]) {
 
@@ -12,3 +12,4 @@ int main(int argc, char* argv[]) {
 
   return 0;
 }
+
