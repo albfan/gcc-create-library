@@ -1,4 +1,4 @@
 # Note the order:
-#   -ltq84-shared needs to be placed AFTER main.c
+#   -lruntime needs to be placed AFTER main.c
 
-gcc  bin/main.o -Lbin/shared -ltq84 -o bin/use-shared-library
+gcc  bin/main.o -Lbin/shared -lruntime -o bin/use-shared-library
